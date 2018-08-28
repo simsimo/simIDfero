@@ -1,0 +1,2 @@
+D:\VS\id\indicateur\indicateur\obj\Debug\indicateur.njsproj.CoreCompileInputs.cache
+D:\VS\id\indicateur\indicateur\bin\Microsoft.NodejsTools.WebRole.dll

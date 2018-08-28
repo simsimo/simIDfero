@@ -1,0 +1,28 @@
+﻿extends layout
+
+block content
+  h1(class="w3-center" style="width:100%")= title
+  div(class="w3-center" style="width:50%")
+    p(class="w3-large")="Ajouter un indicateur"
+    input(id="nom" class="w3-input w3-border" type="text" placeholder="Nom")
+    input(id="bit_1" class="w3-input w3-border" type="text" placeholder="adr bit 1")
+    button(type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="creerID()")="instancier un indicateur"
+  
+  div(class="w3-center" style="width:100%")
+    p(class="w3-large")="Liste des indicateurs"
+    table(id="listDesID" class="w3-table w3-striped w3-bordered")
+     tr()
+        th(class="w3-center")="nom"
+        th(class="w3-center")="valeur"
+  
+  // modal message 
+  div(id="msg" class="w3-modal")
+    div(class="w3-modal-content w3-animate-zoom" style="padding:32px")
+        div(class="w3-container w3-white w3-center")
+            i(onclick="document.getElementById('msg').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge")
+            h2(class="w3-wide")="Message"
+            p()="Veuillez entrer un nom l'indicateur"
+            
+
+
+  script(src="/javascripts/client.js")
